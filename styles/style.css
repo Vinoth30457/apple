@@ -513,10 +513,12 @@ footer {
 
   .container-2 {
     background-image: url(/image/iPhone14pro.jpg);
+    height: 80vh;
   }
 
   .container-3 {
     background-image: url(/image/hero_iphone14_yellow__eun20sn4imi6_large.jpg);
+    height: 80vh;
   }
 
   .container-4 {
@@ -530,6 +532,15 @@ footer {
     background-size: contain;
   }
 
+  .container-4-1,
+  .container-4-2,
+  .container-5-1,
+  .container-5-2,
+  .container-6-1,
+  .container-6-2 {
+    height: 80vh;
+  }
+
   .container-5,
   .container-6 {
     display: flex;
@@ -537,6 +548,7 @@ footer {
 
   .container-7 {
     background-image: url(/image/ott-desk.png);
+    height: 80vh;
   }
 
   .final {
