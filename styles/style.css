@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+}
+
+/* global css */
+img,
+video {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --clr-blue: #06c;
+  --clr-head-black: hsl(240, 3.33%, 11.76%);
+  --full-black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 96.08%);
+  --grey: hsl(240, 0.74%, 26.47%);
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--white);
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  /* customize */
+  background-color: #1c2042;
+  color: white;
+  border: 2px solid #1c2042;
+}
+
+header {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--grey);
+  padding: 0 2rem;
+  overflow: hidden;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  display: none;
+}
+
+.menu {
+  font-size: 0.75rem;
+}
+
+.menu a {
+  color: lightgray;
+}
+
+.logo,
+.search,
+.cart {
+  color: lightgray;
+}
+
+.logo i {
+  font-size: 1.25rem;
+}
+
+.search i,
+.cart i {
+  font-size: 0.9rem;
+}
+
+.last {
+  display: flex;
+  gap: 2rem;
+}
+
+.action-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar {
+  width: 15px;
+  height: 1.5px;
+  background-color: lightgrey;
+}
+
+.top {
+  width: 100%;
+  height: 3.5rem;
+  background-color: hsl(240, 11.11%, 96.47%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+
+}
+
+.top-title {
+  text-align: center;
+  color: var(--grey);
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding: 0 2rem;
+}
+
+.container-1 {
+  width: 100%;
+  min-height: 70vh;
+  background-image: url(/image/apple-video.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contain-1-title {
+  margin-top: 3rem;
+  color: var(--clr-head-black);
+}
+
+.contain-1-para {
+  color: var(--clr-head-black);
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+  margin-top: -10px;
+  font-weight: 400;
+}
+
+.contain-1-link {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.contain-1-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container-2 {
+  width: 100%;
+  min-height: 70vh;
+  background-image: url(/image/iphone14\ mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contain-2-title {
+  color: var(--white);
+  margin-top: 3rem;
+}
+
+.contain-2-para {
+  color: var(--white);
+  margin-top: -15px;
+  margin-bottom: 0.75rem;
+}
+
+.container-3 {
+  width: 100%;
+  min-height: 65vh;
+  background-image: url(/image/iphone\ 14\ yellow\ mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contain-1-title {
+  color: var(--clr-head-black);
+}
+
+.container-4-1 {
+  width: 100%;
+  min-height: 65vh;
+  background-image: url(/image/organge-apple.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container-4-2 {
+  width: 100%;
+  min-height: 65vh;
+  background-image: url(/m-image/wwdc23.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.contain-4 {
+  width: 50%;
+  color: var(--white);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.contain-4-link {
+  margin-bottom: 3rem;
+}
+
+.divider {
+  border: 6px solid var(--white);
+}
+
+.container-5-1 {
+  width: 100%;
+  min-height: 65vh;
+  background-image: url(/m-image/pink-watch.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container-5-2 {
+  width: 100%;
+  min-height: 65vh;
+  background-image: url(/m-image/watch.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contain-5-title {
+  color: var(--white);
+
+}
+
+.contain-5-para {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.orange-txt {
+  color: orange;
+  font-size: 0.7rem;
+  font-weight: 800;
+  margin-top: -15px;
+}
+
+.contain-5-2-title {
+  color: var(--clr-head-black);
+}
+
+.contain-5-2-para {
+  color: var(--clr-head-black);
+  margin-bottom: 1rem;
+}
+
+.container-6-1 {
+  width: 100%;
+  min-height: 65vh;
+  background-image: url(/m-image/mac.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container-6-2 {
+  width: 100%;
+  min-height: 65vh;
+  background-image: url(/m-image/ipad.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-7 {
+  width: 100%;
+  min-height: 70vh;
+  background-image: url(/m-image/ott-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  background-color: hsl(240, 11.11%, 96.47%);
+}
+
+.foot-container {
+  padding: 1rem;
+  font-size: 0.75rem;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.foot-para-2 {
+  padding-left: 1rem;
+}
+
+.para {
+  list-style: decimal;
+}
+
+.mobile-lists {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.mobile-list {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+}
+
+.desktop-menus {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  display: none;
+}
+
+.help-link {
+  color: grey;
+}
+
+.column-1,
+.column-2,
+.column-3,
+.column-4,
+.column-5 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.desk-menus {
+  line-height: 2;
+}
+
+.desktop-menu-title {
+  color: black;
+  font-weight: 500;
+}
+
+.copyrights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.final {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.final-menus {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.click {
+
+  color: gray;
+}
+
+@media screen and (min-width: 576px) {}
+
+/* Medium devices (tablets) */
+
+@media (min-width: 768px) {}
+
+/* Large devices (desktops) */
+
+@media (min-width: 991px) {
+  .container-1 {
+    height: 85vh;
+    background-color: #fff;
+    background-size: contain;
+  }
+
+  .top {
+    background-color: #fff;
+
+  }
+
+  header {
+    padding: 0 14rem;
+  }
+
+  .navbar {
+    display: contents;
+    gap: 0;
+  }
+
+  .action-bar {
+    display: none;
+  }
+
+  .mobile-list {
+    display: none;
+  }
+
+  .desktop-menus {
+    display: contents;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  .foot-container {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .container-2 {
+    background-image: url(/image/iPhone14pro.jpg);
+  }
+
+  .container-3 {
+    background-image: url(/image/hero_iphone14_yellow__eun20sn4imi6_large.jpg);
+  }
+
+  .container-4 {
+    display: flex;
+
+  }
+
+  .container-4-1 {
+    height: 65vh;
+    background-color: #fff;
+    background-size: contain;
+  }
+
+  .container-5,
+  .container-6 {
+    display: flex;
+  }
+
+  .container-7 {
+    background-image: url(/image/ott-desk.png);
+  }
+
+  .final {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .copyrights {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+}
+
+/* Extra large devices (large desktops) */
+
+@media (min-width: 1200px) {}
