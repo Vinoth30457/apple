@@ -13,6 +13,6 @@ i have devlope the Apple clone landing page using html and css
 
 original website : https://www.apple.com/in/?afid=p238%7Cs8Vs8GkTq-dc_mtid_187079nc38483_pcrid_653909215865_pgrid_112258962467_pntwk_g_pchan__pexid__&cid=aos-IN-kwgo-brand--slid---product-
 
-solution link :
+solution link : https://github.com/Vinoth30457/apple.git
 
-my project live link:
+my project live link: https://marvelous-lollipop-9fce90.netlify.app
